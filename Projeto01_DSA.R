@@ -181,7 +181,7 @@ baseline_model_fit = baseline_model |>
 parsnip::tidy(baseline_model_fit)
 parsnip::glance(baseline_model_fit)
 
-#13) Predictions on Test Data
+#13) Predictions on Test Data and metrics
 
 predictions = predict(baseline_model_fit,
                            new_data = cleaned_dataframe_testing_prep)
@@ -195,3 +195,4 @@ cleaned_dataframe_testing_prep |>
 #R-squared
 cleaned_dataframe_testing_prep |>
   yardstick::rsq(truth = mean_energy_consumption_k_wh_100_km , .pred)
+
