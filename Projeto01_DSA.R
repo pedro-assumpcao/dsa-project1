@@ -20,7 +20,7 @@ p_load(Boruta)
 
 #Reading Data ----
 
-setwd('C:\\Users\\pedro_jw08iyg\\OneDrive\\Área de Trabalho\\DSA\\Projetos\\Big Data Analytics com R e Microsoft Azure Machine Learning\\Projeto1')
+setwd('')
 
 raw_dataframe = readxl::read_excel('data/FEV-data-Excel.xlsx')
 setDT(raw_dataframe)
